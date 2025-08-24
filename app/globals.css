@@ -2,7 +2,10 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #000000;
+  --foreground: #ffffff;
+  --bgPrimary: #ffffff;
+  --bgSecondary: #444444;
+  --bgAccent: #333333;
 }
 
 @theme inline {
@@ -10,12 +13,20 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-bgPrimary: var(--bgPrimary);
+  --color-bgSecondary: var(--bgSecondary);
+  --color-bgAccent: var(--bgAccent);
+  --color-primary: #8E00FF;
+  --color-alert: #EF4444;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
+    --background: #333333;
     --foreground: #ffffff;
+    --bgPrimary: #222222;
+    --bgSecondary: #333333;
+    --bgAccent: #444444;
   }
 }
 
@@ -23,4 +34,16 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  display: hidden;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8E00FF;
 }

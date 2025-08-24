@@ -1,8 +1,11 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Linkly",
-  description: "A link in bio maker",
+  title: "Webify",
+  description: "The Simplest Website Builder",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

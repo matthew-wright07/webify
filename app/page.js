@@ -1,7 +1,7 @@
-import Test from "@/components/Test";
+import Build from "@/components/pages/Build";
 
 export default function HomePage(){
   return (
-    <Test/>
+    <Build/>
   )
 }
