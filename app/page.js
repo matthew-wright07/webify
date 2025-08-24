@@ -1,5 +1,7 @@
+import Test from "@/components/Test";
+
 export default function HomePage(){
   return (
-    <h1>Hello World</h1>
+    <Test/>
   )
 }
